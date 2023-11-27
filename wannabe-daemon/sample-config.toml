@@ -1,0 +1,23 @@
+priv_ssh_key = "/home/funnyboy_roks/.ssh/id_rsa2"
+url = "localhost:3000"
+name = "test"
+
+[[actions]]
+name = "vol_up"
+command = "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+
+[[actions]]
+name = "vol_down"
+command = "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+
+[[actions]]
+name = "lock"
+command = "~/.config/i3/lock"
+
+[[actions]]
+name = "stdout"
+command = "echo 'hello world!'"
+
+[[actions]]
+name = "stderr"
+command = "echo 'hello world!' >&2"

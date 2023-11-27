@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "wannabe-server",
+    "wannabe-daemon"
+]
+resolver = "2"

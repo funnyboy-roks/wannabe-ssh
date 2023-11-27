@@ -1,0 +1,17 @@
+[github]
+client_id = "<CLIENT-ID>"
+client_secret = "<CLIENT-SECRET>"
+
+[clients.bob-pc]
+ssh_key = "/home/bob/.ssh/id_rsa.pub"
+
+[clients.jim-pc]
+ssh_key = "/home/jim/.ssh/id_rsa.pub"
+
+[users.bob]
+clients = ["bob"]
+email = "bob@example.com"
+
+[users.jim]
+clients = ["jim"]
+email = "jim@example.com"
